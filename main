@@ -1,0 +1,127 @@
+#define pinoA 3 // acima
+#define pinoF 4 // esquerda acima
+#define pinoB 2 // direita acima
+#define pinoG 5 // central
+#define pinoE 6 // esquerda abaixo
+#define pinoC 8 // direita abaxo
+#define pinoD 7 // abaixo
+
+void setup() { // code config
+  pinMode(pinoA, OUTPUT); // tipo de saida do componente
+  pinMode(pinoF, OUTPUT);
+  pinMode(pinoB, OUTPUT);
+  pinMode(pinoG, OUTPUT);
+  pinMode(pinoE, OUTPUT);
+  pinMode(pinoC, OUTPUT);
+  pinMode(pinoD, OUTPUT);
+}
+
+void loop() {
+  // 0 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, HIGH);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, LOW);
+  digitalWrite(pinoE, HIGH);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+// 1 rd
+  digitalWrite(pinoA, LOW);
+  digitalWrite(pinoF, LOW);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, LOW);
+  digitalWrite(pinoE, LOW);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, LOW);
+
+  delay(1000);
+// 2 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, LOW);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, HIGH);
+  digitalWrite(pinoC, LOW);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+
+  // 3 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, LOW);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, LOW);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+
+  // 4 rd
+  digitalWrite(pinoA, LOW);
+  digitalWrite(pinoF, HIGH);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, LOW);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, LOW);
+
+  delay(1000);
+
+  // 5 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, HIGH);
+  digitalWrite(pinoB, LOW);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, LOW);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+
+  // 6 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, HIGH);
+  digitalWrite(pinoB, LOW);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, HIGH);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+
+  // 7 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, LOW);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, LOW);
+  digitalWrite(pinoE, LOW);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, LOW);
+
+  delay(1000);
+
+  // 8
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, HIGH);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, HIGH);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+
+  // 9 rd
+  digitalWrite(pinoA, HIGH);
+  digitalWrite(pinoF, HIGH);
+  digitalWrite(pinoB, HIGH);
+  digitalWrite(pinoG, HIGH);
+  digitalWrite(pinoE, LOW);
+  digitalWrite(pinoC, HIGH);
+  digitalWrite(pinoD, HIGH);
+
+  delay(1000);
+}
